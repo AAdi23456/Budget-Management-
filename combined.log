@@ -99,3 +99,12 @@ Invalid value for argument `startDate`: Provided Date object is invalid. Expecte
 2024-05-27T13:24:16.468Z [32minfo[39m: Transaction updated: Transaction ID: 10
 2024-05-27T13:26:42.529Z [32minfo[39m: GET /currency/convert?amount=500&fromCurrency=INR&toCurrency=USD
 2024-05-27T13:26:44.129Z [32minfo[39m: Currency conversion succeeded: 500 INR to 6 USD
+2024-05-27T15:10:52.980Z [32minfo[39m: GET /currency/convert?amount=500&fromCurrency=INR&toCurrency=USD
+2024-05-27T15:10:52.987Z [31merror[39m: Cannot read properties of undefined (reading 'replace')
+2024-05-27T15:10:53.549Z [32minfo[39m: GET /favicon.ico
+2024-05-27T15:11:23.981Z [32minfo[39m: GET /currency/convert?amount=500&fromCurrency=INR&toCurrency=USD
+2024-05-27T15:11:25.617Z [32minfo[39m: Currency conversion succeeded: 500 INR to 6 USD
+2024-05-27T15:12:04.876Z [32minfo[39m: GET /currency/convert?amount=500&fromCurrency=INR&toCurrency=USD
+2024-05-27T15:12:06.151Z [32minfo[39m: Currency conversion succeeded: 500 INR to 6 USD
+2024-05-27T15:12:10.330Z [32minfo[39m: GET /currency/convert?amount=500&fromCurrency=INR&toCurrency=USD
+2024-05-27T15:12:10.340Z [31merror[39m: Cannot read properties of undefined (reading 'replace')

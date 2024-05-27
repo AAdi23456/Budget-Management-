@@ -72,30 +72,7 @@ The server will start listening on port 3000 by default.
 
 #### Budget Management
 
-- **GET https://budget-management-n4bf.onrender.com/budgets**: Get all budgets for the authenticated user.
-  - Response:
-    ```json
-   [
-  {
-    "id": 3,
-    "amount": 500,
-    "categoryId": 3,
-    "userId": 2,
-    "startDate": "2024-05-01T00:00:00.000Z",
-    "endDate": "2024-05-31T00:00:00.000Z"
-  },
-  {
-    "id": 4,
-    "amount": 900,
-    "categoryId": 3,
-    "userId": 2,
-    "startDate": "2024-05-01T00:00:00.000Z",
-    "endDate": "2024-05-31T00:00:00.000Z"
-  }
-]
-    ```
-
-- **POST https://budget-management-n4bf.onrender.com/budgets**: Add a new budget for the authenticated user.
+**POST https://budget-management-n4bf.onrender.com/budgets : Add a new budget for the authenticated user.
   - Request Body:
     ```json
     {
@@ -119,7 +96,32 @@ The server will start listening on port 3000 by default.
 }
     ```
 
-- **PUT https://budget-management-n4bf.onrender.com/budgets/2**: Update an existing budget.
+- **GET https://budget-management-n4bf.onrender.com/budgets : Get all budgets for the authenticated user.
+  - Response:
+    ```json
+   [
+  {
+    "id": 3,
+    "amount": 500,
+    "categoryId": 3,
+    "userId": 2,
+    "startDate": "2024-05-01T00:00:00.000Z",
+    "endDate": "2024-05-31T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "amount": 900,
+    "categoryId": 3,
+    "userId": 2,
+    "startDate": "2024-05-01T00:00:00.000Z",
+    "endDate": "2024-05-31T00:00:00.000Z"
+  }
+]
+    ```
+
+- 
+
+- **PUT https://budget-management-n4bf.onrender.com/budgets/2  : Update an existing budget.
   - Request Body:
     ```json
    {
@@ -142,7 +144,7 @@ The server will start listening on port 3000 by default.
 }
     ```
 
-- **DELETE  https://budget-management-n4bf.onrender.com/budgets/2**: Delete a budget.
+- **DELETE  https://budget-management-n4bf.onrender.com/budgets/2  : Delete a budget.
 
 #### Transaction Management
 
@@ -169,7 +171,7 @@ The server will start listening on port 3000 by default.
 ]
     ```
 
-- **POST https://budget-management-n4bf.onrender.com/transactions**: Add a new transaction for the authenticated user.
+- **POST https://budget-management-n4bf.onrender.com/transactions : Add a new transaction for the authenticated user.
   - Request Body:
     ```json
   {

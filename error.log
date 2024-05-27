@@ -61,3 +61,5 @@ C:\Users\adity\personal-finance-manager\src\controllers\budgetController.js:23:4
        })
 
 Invalid value for argument `startDate`: Provided Date object is invalid. Expected Date.
+2024-05-27T15:10:52.987Z [31merror[39m: Cannot read properties of undefined (reading 'replace')
+2024-05-27T15:12:10.340Z [31merror[39m: Cannot read properties of undefined (reading 'replace')
