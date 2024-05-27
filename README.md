@@ -41,7 +41,7 @@ The server will start listening on port 3000 by default.
     ```json
     {
       "name": "John Doe",
-      "email": "john.doe@example.com",
+      "email": "johnyy.doe@example.com",
       "password": "password"
     }
     ```
@@ -59,7 +59,7 @@ The server will start listening on port 3000 by default.
   - **Request Body:**
     ```json
     {
-      "email": "john.doe@example.com",
+      "email": "johnyy.doe@example.com",
       "password": "password"
     }
     ```
@@ -215,7 +215,7 @@ The server will start listening on port 3000 by default.
 
 #### Monthly Report
 
-- **GET https://budget-management-n4bf.onrender.com/reports/monthly?month=6&year=2024**: Get the monthly financial report for the authenticated user.
+- **GET https://budget-management-n4bf.onrender.com/reports/monthly?month=5&year=2024**: Get the monthly financial report for the authenticated user.
   - **Request URL:**  
     `https://budget-management-n4bf.onrender.com/reports/monthly?month=6&year=2024`
 
