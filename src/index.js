@@ -6,10 +6,12 @@ const budgetRoutes = require('./routes/budgets');
 const reportRoutes = require('./routes/reports');
 const currencyRoutes = require('./routes/currency');
 const logger = require('./logger');
+const cors =require("cors")
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(cors());
 app.use((req, res, next) => {
   logger.info(`${req.method} ${req.url}`);
   next();
