@@ -33,7 +33,7 @@ The server will start listening on port 3000 by default.
 #### Authentication
 
 
-- **POST https://budget-management-n4bf.onrender.com/auth/register**: Register a new user with name, email, and password.
+- **POST https://budget-management-n4bf.onrender.com/auth/register : Register a new user with name, email, and password.
   - Request Body:
     ```json
     {
@@ -53,7 +53,7 @@ The server will start listening on port 3000 by default.
     ```
 
 
-- **POST https://budget-management-n4bf.onrender.com/auth/login**: Log in with email and password to receive a JWT token.
+- **POST https://budget-management-n4bf.onrender.com/auth/login : Log in with email and password to receive a JWT token.
   - Request Body:
     ```json
     {
@@ -193,7 +193,7 @@ The server will start listening on port 3000 by default.
 }
     ```
 
-- **PUT https://budget-management-n4bf.onrender.com/transactions/:id**: Update an existing transaction.
+- **PUT https://budget-management-n4bf.onrender.com/transactions/:id : Update an existing transaction.
   - Request Body:
     ```json
    {
@@ -216,12 +216,12 @@ The server will start listening on port 3000 by default.
 }
     ```
 
-- **DELETE https://budget-management-n4bf.onrender.com/transactions/:id**: Delete a transaction.
+- **DELETE https://budget-management-n4bf.onrender.com/transactions/:id : Delete a transaction.
 
 
 #### Monthly Report
 
-- **GET https://budget-management-n4bf.onrender.com/reports/monthly?month=6&year=2024**: Get the monthly financial report for the authenticated user.
+- **GET https://budget-management-n4bf.onrender.com/reports/monthly?month=6&year=2024 : Get the monthly financial report for the authenticated user.
 
  Request url-  https://budget-management-n4bf.onrender.com/reports/monthly?month=6&year=2024
 
