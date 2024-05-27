@@ -1,0 +1,101 @@
+2024-05-26T16:05:28.101Z [32minfo[39m: GET /currency/convert?amount=500&fromCurrency=INR&toCurrency=USD
+2024-05-26T16:06:36.134Z [32minfo[39m: POST /auth/login
+2024-05-26T16:06:36.153Z [31merror[39m: Expected property name or '}' in JSON at position 4
+2024-05-26T16:06:44.782Z [32minfo[39m: POST /auth/login
+2024-05-26T16:06:44.785Z [31merror[39m: Unexpected non-whitespace character after JSON at position 67
+2024-05-26T16:06:57.851Z [32minfo[39m: POST /auth/login
+2024-05-26T16:06:57.855Z [31merror[39m: Unexpected non-whitespace character after JSON at position 64
+2024-05-26T16:07:09.610Z [32minfo[39m: POST /auth/login
+2024-05-26T16:07:09.906Z [33mwarn[39m: Failed login attempt: user@example.com
+2024-05-27T13:07:30.086Z [32minfo[39m: POST /auth/login
+2024-05-27T13:07:30.629Z [33mwarn[39m: Failed login attempt: user@example.com
+2024-05-27T13:07:55.413Z [32minfo[39m: POST /auth/register
+2024-05-27T13:07:55.631Z [32minfo[39m: User registered: user@example.com
+2024-05-27T13:08:43.979Z [32minfo[39m: POST /auth/login
+2024-05-27T13:08:44.155Z [32minfo[39m: User logged in: user@example.com
+2024-05-27T13:10:53.125Z [32minfo[39m: POST /budgets
+2024-05-27T13:11:02.003Z [32minfo[39m: POST /auth/login
+2024-05-27T13:11:02.189Z [31merror[39m: Login error: 
+Invalid `prisma.user.findUnique()` invocation in
+C:\Users\adity\personal-finance-manager\src\controllers\authController.js:33:36
+
+  30 const { email, password } = req.body;
+  31 
+  32 try {
+→ 33   const user = await prisma.user.findUnique({
+         where: {
+           email: undefined,
+       ?   id?: Int,
+       ?   AND?: UserWhereInput | UserWhereInput[],
+       ?   OR?: UserWhereInput[],
+       ?   NOT?: UserWhereInput | UserWhereInput[],
+       ?   name?: StringFilter | String,
+       ?   password?: StringFilter | String,
+       ?   budgets?: BudgetListRelationFilter,
+       ?   transactions?: TransactionListRelationFilter
+         }
+       })
+
+Argument `where` of type UserWhereUniqueInput needs at least one of `id` or `email` arguments. Available options are marked with ?.
+2024-05-27T13:11:05.731Z [32minfo[39m: POST /auth/login
+2024-05-27T13:11:05.904Z [32minfo[39m: User logged in: user@example.com
+2024-05-27T13:12:21.728Z [32minfo[39m: POST /budgets/
+2024-05-27T13:12:21.755Z [31merror[39m: Error adding budget for user 2: 
+Invalid `prisma.budget.create()` invocation in
+C:\Users\adity\personal-finance-manager\src\controllers\budgetController.js:23:40
+
+  20 const { amount, categoryId, startDate, endDate } = req.body;
+  21 
+  22 try {
+→ 23   const budget = await prisma.budget.create({
+         data: {
+           userId: 2,
+           amount: undefined,
+           categoryId: undefined,
+           startDate: new Date("Invalid Date"),
+                      ~~~~~~~~~~~~~~~~~~~~~~~~
+           endDate: new Date("Invalid Date")
+         }
+       })
+
+Invalid value for argument `startDate`: Provided Date object is invalid. Expected Date.
+2024-05-27T13:13:04.059Z [32minfo[39m: POST /budgets/
+2024-05-27T13:13:04.071Z [31merror[39m: Error adding budget for user 2: 
+Invalid `prisma.budget.create()` invocation in
+C:\Users\adity\personal-finance-manager\src\controllers\budgetController.js:23:40
+
+  20 const { amount, categoryId, startDate, endDate } = req.body;
+  21 
+  22 try {
+→ 23   const budget = await prisma.budget.create({
+         data: {
+           userId: 2,
+           amount: undefined,
+           categoryId: undefined,
+           startDate: new Date("Invalid Date"),
+                      ~~~~~~~~~~~~~~~~~~~~~~~~
+           endDate: new Date("Invalid Date")
+         }
+       })
+
+Invalid value for argument `startDate`: Provided Date object is invalid. Expected Date.
+2024-05-27T13:13:34.170Z [32minfo[39m: POST /budgets/
+2024-05-27T13:13:34.485Z [32minfo[39m: Budget added for user: 2, Budget ID: 3
+2024-05-27T13:14:49.564Z [32minfo[39m: POST /budgets/
+2024-05-27T13:14:49.621Z [32minfo[39m: Budget added for user: 2, Budget ID: 4
+2024-05-27T13:14:55.631Z [32minfo[39m: GET /budgets/
+2024-05-27T13:14:55.674Z [32minfo[39m: Budgets retrieved for user: 2
+2024-05-27T13:16:29.141Z [32minfo[39m: PUT /budgets/4
+2024-05-27T13:16:29.372Z [32minfo[39m: Budget updated: Budget ID: 4
+2024-05-27T13:17:25.957Z [32minfo[39m: DELETE /budgets/4
+2024-05-27T13:17:25.994Z [32minfo[39m: Budget deleted: Budget ID: 4
+2024-05-27T13:20:30.230Z [32minfo[39m: POST /transactions
+2024-05-27T13:20:30.573Z [32minfo[39m: Transaction added for user: 2, Transaction ID: 9
+2024-05-27T13:21:49.457Z [32minfo[39m: POST /transactions
+2024-05-27T13:21:49.528Z [32minfo[39m: Transaction added for user: 2, Transaction ID: 10
+2024-05-27T13:23:02.689Z [32minfo[39m: GET /transactions
+2024-05-27T13:23:02.725Z [32minfo[39m: Transactions retrieved for user: 2
+2024-05-27T13:24:16.418Z [32minfo[39m: PUT /transactions/10
+2024-05-27T13:24:16.468Z [32minfo[39m: Transaction updated: Transaction ID: 10
+2024-05-27T13:26:42.529Z [32minfo[39m: GET /currency/convert?amount=500&fromCurrency=INR&toCurrency=USD
+2024-05-27T13:26:44.129Z [32minfo[39m: Currency conversion succeeded: 500 INR to 6 USD
